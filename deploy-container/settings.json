@@ -9,5 +9,6 @@
   "git.autofetch": true,
   "security.workspace.trust.enabled": false,
   "extensions.ignoreRecommendations": true,
+  "update.mode": "none",
   "python.showStartPage": false
 }
