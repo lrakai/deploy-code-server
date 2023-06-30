@@ -14,6 +14,11 @@ COPY deploy-container/rclone-tasks.json /tmp/rclone-tasks.json
 
 # Set custom favicon
 COPY deploy-container/favicon.ico /usr/lib/code-server/src/browser/media/favicon.ico
+RUN sudo cp /usr/lib/code-server/src/browser/media/favicon.ico /usr/lib/code-server/src/browser/media/favicon.svg && \
+    sudo cp /usr/lib/code-server/src/browser/media/favicon.ico /usr/lib/code-server/src/browser/media/favicon-dark-support.svg && \
+    sudo cp /usr/lib/code-server/src/browser/media/favicon.ico /usr/lib/code-server/lib/vscode/resources/server/favicon.ico && \
+    sudo cp /usr/lib/code-server/src/browser/media/favicon.ico /usr/lib/code-server/lib/vscode/extensions/microsoft-authentication/media/favicon.ico && \
+    sudo cp /usr/lib/code-server/src/browser/media/favicon.ico /usr/lib/code-server/lib/vscode/extensions/github-authentication/media/favicon.ico
 
 # Copy in custom config (disable password authentication)
 COPY deploy-container/config.yaml .config/code-server/config.yaml
