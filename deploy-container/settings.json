@@ -1,7 +1,12 @@
 {
+  "files.enableTrash": false,
+  "workbench.silentNotifications": true,
+  "editor.autoSave": "on",
   "workbench.colorTheme": "Default Dark+",
-  "git.postCommitCommand": "sync",
+  "workbench.startupEditor": "none",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "security.workspace.trust.enabled": false,
+  "python.showStartPage": false
 }
