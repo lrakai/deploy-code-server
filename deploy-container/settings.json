@@ -8,5 +8,6 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   "security.workspace.trust.enabled": false,
+  "extensions.ignoreRecommendations": true,
   "python.showStartPage": false
 }
