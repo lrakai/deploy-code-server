@@ -97,4 +97,9 @@ fi
 
 echo "[$PREFIX] Starting code-server..."
 # Now we can run code-server with the default entrypoint
-/usr/bin/entrypoint.sh --bind-addr 0.0.0.0:3000 $START_DIR
+/usr/bin/entrypoint.sh \
+    --bind-addr 0.0.0.0:3000 \
+    --app-name "ca-code-labs" \
+    --disable-getting-started-override \
+    --disable-telemetry \
+    $START_DIR
