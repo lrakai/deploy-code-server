@@ -2,7 +2,7 @@
   "files.enableTrash": false,
   "workbench.silentNotifications": true,
   "editor.autoSave": "on",
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Default Dark Modern",
   "workbench.startupEditor": "none",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
